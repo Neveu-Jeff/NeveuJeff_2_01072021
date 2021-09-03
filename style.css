@@ -161,10 +161,14 @@ a {
 .info p {
   display: inline;
 }
-/* cases fond blanc marseille */
+/* cases marseille */
+.case-marseille:hover{
+  transform: scale(1.1);
+  transition: ease 0.5s;
+}
+
 .blocs{
   display:flex;
-
 }
 .bloc {
   background: #f2f2f2;
@@ -238,14 +242,16 @@ a {
   margin-left: 40px;
   margin-top: 6%;
 }
-
-
-/* test sur les deux */
 .cases-activites>.cases-marseille{
   display:flex;
   -ms-flex-align: start;
 }
 /* case populaire */
+.case-populaire:hover{
+  transform: scale(1.1);
+  transition: ease 0.5s;
+
+}
 .bloc-populaire .titre-populaire {
   display: flex;
   justify-content: space-between;
@@ -281,9 +287,7 @@ a {
   margin-bottom: 20px;
   box-shadow: 0px 0px 6px 0px #0000002e;
 }
-.description{
-	padding-left:5px;
-}		
+
 .descriptionpo{
   margin-left:5px;
   display: flex;
@@ -294,11 +298,6 @@ a {
   margin-bottom: 15px;
   margin-top: -15px;
 }
-/* image zoomer */
-.case-marseille:hover{
-  transform:scale(1);
-}
-
 .cases-marseille{
   background: #f2f2f2;
 }
@@ -313,6 +312,27 @@ a {
 }
 
 /* activités */
+.solo:hover{
+  transform: scale(1.1);
+  transition: ease 0.5s;
+}
+#activites2:hover{
+  transform: scale(1.1);
+  transition: ease 0.5s;
+}
+#activites3:hover{
+  transform: scale(1.1);
+  transition: ease 0.5s;
+}
+#activites5:hover{
+  transform: scale(1.1);
+  transition: ease 0.5s;
+}
+#activites6:hover{
+    transform: scale(1.1);
+    transition: ease 0.5s;
+}
+
 .titre-activites{
   margin-bottom: 40px;
   padding-bottom: 4px;
@@ -419,7 +439,6 @@ a {
   margin-bottom: 15px;
 }
 
-
 .footer-case3 {
   padding: 30px;
   display: flex;
@@ -443,7 +462,7 @@ a {
   width: 100%;
 }
 
-/* test tablette */
+/* adaptation tablette */
 @media screen and (max-width: 1450px) {
   .blocs{
     display: flex;
@@ -501,7 +520,6 @@ a {
   }
 
   .activites-marseille{
-
     min-height: 10px;
   }
 
@@ -556,6 +574,7 @@ a {
   }
 
 }
+
 @media screen and (max-width: 650px){
   
   .titre1{
@@ -626,6 +645,8 @@ a {
     margin: initial;
   }
 }
+/* adaptation mobile */
+
 @media screen and (max-width: 500px) {
   .case-marseille{
     display: flex;
