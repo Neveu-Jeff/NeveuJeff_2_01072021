@@ -40,13 +40,26 @@ a {
   margin-left: auto;
   padding-top: 20px;
 }
+.heb{
+  padding: 20px 32px 32px;
+  transition-duration: 0.5s;
+  border-top: 3px transparent solid;
+  border-bottom: 3px transparent solid;
+}
+
+.act{
+  padding: 2rem;
+  transition-duration: 0.5s;
+  border-top: 3px transparent solid;
+  border-bottom: 3px transparent solid;
+}
 .act  {
   margin-left: 70px;
   padding-top: 20px;
 }
 .act:hover{
   border-top: 3px solid #0065FC;
-  padding-top: 20px;
+
 }
 .ins  {
   margin-right: 70px;
@@ -69,7 +82,7 @@ a {
 }
 .heb:hover{
   border-top: 3px solid #0065FC;
-  padding-top: 20px;
+
 }
 /* barre de recherche */
 
@@ -135,6 +148,7 @@ a {
   padding: 1.5px 20px 1.5px 0px;
   margin-top: 15px;
   border-radius: 40px;
+  cursor: pointer;
 }
 .filtres ul li:hover{
   background-color: #deebff;
@@ -166,7 +180,9 @@ a {
   transform: scale(1.1);
   transition: ease 0.5s;
 }
-
+.description{
+  margin-left: 10px;
+}
 .blocs{
   display:flex;
 }
@@ -177,11 +193,8 @@ a {
   margin-right: 30px;
   align-items: center;
 }
-.bloc-populaire{
-  max-width:33%;
-  background: #f2f2f2;
-  border-radius: 25px;
-}
+
+
 .bloc .titre-marseille {
   display: block;
   width: 90%;
@@ -199,7 +212,7 @@ a {
   width: 100%;
   height: 100px;
   background-size: 100% 100%;
-  border-radius: 20px 20px 0 0;
+  border-radius: 16px 16px 0 0;
   object-fit: cover;
 }
 .case-marseille{
@@ -210,7 +223,7 @@ a {
   flex-direction: column;
   justify-content: left;
   align-items: start;
-  border-radius: 25px;
+  border-radius: 16px;
   border: 5px solid transparent;
   box-shadow: 5px 5px 5px 5px #0000002e;
   margin-left: 40px;
@@ -235,7 +248,7 @@ a {
   width: 100%;
   height: 100px;
   background-size: 100% 100%;
-  border-radius: 20px 20px 0 0;
+  border-radius: 13px 13px 0 0;
   object-fit: cover;
 }
 .afficher-plus{
@@ -247,10 +260,22 @@ a {
   -ms-flex-align: start;
 }
 /* case populaire */
+.cases-populaire > a{
+  width:33%;
+}
+.bloc-populaire{
+  max-width:33%;
+  background: #f2f2f2;
+  border-radius: 16px;
+}
 .case-populaire:hover{
   transform: scale(1.1);
   transition: ease 0.5s;
 
+}
+.case-populaire > img{
+  max-height: 130px;
+  min-width: 170px;
 }
 .bloc-populaire .titre-populaire {
   display: flex;
@@ -262,18 +287,14 @@ a {
 .fa-chart-line:before{
   font-size: 26px;
 }
-
-.image-populaire {
-
-  height: 100%;
-
+.image-populaire{
+  margin-bottom: -4px;
 }
 .image-populaire img {
-  width: 100%;
-  height: 100%;
+  width: 170px;
+  height: 130px;
   max-height: 130px;
-  min-width: 170px;
-  border-radius: 20px 0 0 15px;
+  border-radius: 13px 0 0 13px;
   object-fit: cover;
 }
 .case-populaire{
@@ -281,7 +302,7 @@ a {
   display: flex;
   margin-top: 30px;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 16px;
   padding: 7px 25px 7px 7px;
   margin-left:40px;
   margin-bottom: 20px;
@@ -305,7 +326,7 @@ a {
 
 .cases-populaire{
  
-  margin-right: 40px;
+  margin-right: 10%;
 }
 .descriptionpo3{
   margin-left: 5px;
@@ -392,7 +413,7 @@ a {
 
 .solo img{
   height: 440px;
-  size: 40px;
+
 }
 .double{
   width: 23%;
@@ -470,7 +491,7 @@ a {
   }
   .cases-populaire{
     display: flex;
- 
+    margin-right: 40px;
   }
   .bloc-populaire{
     max-width: 98%;
@@ -501,7 +522,9 @@ a {
   .image-marseille{
     width: 100%;
   }
-
+  .image-populaire{
+    margin-bottom: 2px;
+  }
 }
 @media screen and (max-width: 1015px) {
   .cases-populaire{
@@ -595,7 +618,6 @@ a {
   }
   .hebergements-activites{
     border-bottom: 3px solid #F2F2F2;
-    padding-bottom: 10px;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -618,6 +640,7 @@ a {
     width: 40%;
     display: flex;
     justify-content: center;
+    border-top: none;
   }  
   .heb:hover{
     border-top: none;
@@ -631,6 +654,7 @@ a {
     width: 40%;
     display: flex;
     justify-content: center;
+    border-top: none;
   }
   .act:hover{
     border-bottom: 3px solid #0065FC;
@@ -653,6 +677,7 @@ a {
     flex-direction: column;
     width: 200%;
     min-width: 330px;
+    margin-left: 25%;
   }
   .boutton-rechercher{
     display: none;
